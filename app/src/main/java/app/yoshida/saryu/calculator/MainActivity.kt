@@ -18,10 +18,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater).apply { setContentView(this.root) }
 
-        binding.plusButton.backgroundTintList = ColorStateList.valueOf(Color.rgb(150,150,150))
-        binding.minusButton.backgroundTintList = ColorStateList.valueOf(Color.rgb(150,150,150))
-        binding.multiplyButton.backgroundTintList = ColorStateList.valueOf(Color.rgb(150,150,150))
-        binding.equalButton.backgroundTintList = ColorStateList.valueOf(Color.rgb(150,150,150))
+//        binding.plusButton.backgroundTintList = ColorStateList.valueOf(Color.rgb(150,150,150))
+//        binding.minusButton.backgroundTintList = ColorStateList.valueOf(Color.rgb(150,150,150))
+//        binding.multiplyButton.backgroundTintList = ColorStateList.valueOf(Color.rgb(150,150,150))
+//        binding.equalButton.backgroundTintList = ColorStateList.valueOf(Color.rgb(150,150,150))
 
         binding.plusButton.isEnabled = false
         binding.minusButton.isEnabled = false
@@ -102,6 +102,7 @@ class MainActivity : AppCompatActivity() {
 
             firstNumber = 0
             secondNumber = 0
+            totalNumber = 0
             operator = "empty"
             binding.numberText.text = totalNumber.toString()
         }
